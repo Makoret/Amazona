@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+    font-family: Arial;
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #131921;
+        color: white;
+        .logo {
+            // background-image: url(${Amazon_logos});
+        }
+        .search {
+            background-color: orange;
+            border-radius: 5px;
+        }
+        .search::selection {
+            padding: 2px;
+        }
+    }
+    navBar {
+        background-color: #232f3e;
+    }
+}
