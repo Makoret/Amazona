@@ -1,17 +1,19 @@
 import React from "react";
-// import Amazon_logos from "/images/Amazon_logos.png";
+import Amazon_logos from "./Amazon_logos.png";
 
 export default function Header(params) {
     return (
         <header>
-            <div className="logo">logo</div>
-            {/* <Amazon_logos></Amazon_logos> */}
+            <div className="logo" style={{ backgroundImage: `url(${Amazon_logos})` }}></div>
             <div className="location">location</div>
             <div className="search">
-                <select class="navSearchDropdown" id="searchDropdownBox" tabindex="0" title="Search in">
-                    <option selected="selected" value="aps">
-                        All Departments
-                    </option>
+                <select
+                    defaultValue={"selected"}
+                    className="navSearchDropdown"
+                    id="searchDropdownBox"
+                    title="Search in"
+                >
+                    <option value="aps">All Departments</option>
                     <option value="artsCrafts">Arts &amp; Crafts</option>
                     <option value="automotive">Automotive</option>
                     <option value="babyProducts">Baby</option>
